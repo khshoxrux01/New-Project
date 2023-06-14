@@ -11,8 +11,21 @@
     font-family: 'Oswald';
     src: url(./fonts/Oswald-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
 body {
     background:rgba(10, 2, 22, 0.94);
+}
+* {
+    margin: 0px;
+    padding: 0px;
 }
 h2 {
     font-family: 'Oswald';
@@ -23,15 +36,18 @@ h2 {
     color: #FFFFFF;
 }
 .block {
-    width: 390px;
-    height: 626px;
+    width: 330px;
+    height: 640px;
     background-image: url(./img/Vector.png);
     background-repeat: no-repeat;
+    background-size: contain;
     padding: 33px;
 }
 .firstImg {
     z-index: 1;
     position: absolute;
+    width: 324px;
+    height: 337px;
 }
 .heart {
     z-index: 0;
@@ -47,6 +63,10 @@ h2 {
     background-image:url(./img/Vector\ 2.png);
     background-repeat:no-repeat;
 }
+.textPart {
+    display: flex;
+    flex-direction: column;
+}
 .textPart p {
     font-family: 'Jost';
     font-style: normal;
@@ -54,4 +74,35 @@ h2 {
     font-size: 18px;
     line-height: 125%;
     color: rgba(254, 254, 254, 0.5);
+    margin-top: 18px;
+}
+.textPart h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 41px;
+    color: #F50395;
+    margin-bottom: 31px;
+}
+.textPart span {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    margin-left: 160px;
+}
+.button {
+    width: 324px;
+    height: 48px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
 }
